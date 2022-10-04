@@ -99,22 +99,13 @@ var tabsBtn = $('.tab_menu li a'),
 
     });
     
-    /* $(function(){
-      var $tabs = $('.tabs-nav li a'),
-          $pannel = $('.tabs-panel');
-    
-          $tabs.click(function(e){
-            e.preventDefault();
-            $tabs.removeClass('active');
-            $(this).addClass('active');
-            
-            $pannel.hide();
-            var $target = $(this).attr('href');
-            $($target).show()
-            console.log($target);
-    
-    
-          });
-    }); */
-
+  //  accordion Type1
+  function accordion(){
+    var accordionBtn = $('.accordion li a'),
+        accordionCont = $('.accordion li div');
+        accordionBtn.on('click',function(){
+          $(this).next('div').toggle('on');
+        });
+  }
+  accordion();
   });
