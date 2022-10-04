@@ -1,0 +1,62 @@
+@charset "utf-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {-webkit-text-size-adjust:100%;line-height:1.15}
+body {margin:0}
+main {display:block}
+h1 {font-size:2em;margin:.67em 0}
+hr {box-sizing:content-box;height:0;overflow:visible}
+pre {font-family:monospace, monospace;font-size:1em}
+a {background-color:transparent}
+abbr[title] {border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b, strong {font-weight:bolder}
+code, kbd, samp {font-family:monospace, monospace;font-size:1em}
+small {font-size:80%}
+sub, sup {font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub {bottom:-.25em}
+sup {top:-.5em}
+img {border-style:none}
+button, input, optgroup, select, textarea {font-family:inherit;font-size:100%;line-height:1.15;margin:0}
+button, input {overflow:visible}
+button, select {text-transform:none}
+[type=button], [type=reset], [type=submit], button {-webkit-appearance:button}
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {border-style:none;padding:0}
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {outline:1px dotted ButtonText}
+fieldset {padding:.35em .75em .625em}
+legend {box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}
+progress {vertical-align:baseline}
+textarea {overflow:auto}
+[type=checkbox], [type=radio] {box-sizing:border-box;padding:0}
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {height:auto}
+[type=search] {-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration {-webkit-appearance:none}
+::-webkit-file-upload-button {-webkit-appearance:button;font:inherit}
+details {display:block}
+summary {display:list-item}
+[hidden], template {display:none}
+ul, li {text-decoration: none;}
+
+/* reset */
+* {box-sizing:border-box; font-family: -apple-system, 'Apple SD Gothic Neo', 'NotoSansR', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;-webkit-tap-highlight-color:transparent;outline:none;}
+html,body {-webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; text-size-adjust:none;}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, button, address, em, img, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, hr, figure {margin:0; padding:0}
+h1, h2, h3, h4, h5, h6 {font-weight:normal; font-size: 16px;}
+ol, ul, li {list-style:none}
+table {width:100%; border-collapse:collapse; border-spacing:0}
+form, fieldset, iframe {display:block; border:0}
+img, button {border:0 none; vertical-align:middle}
+img {width:100%;}
+hr {height:0; display:none}
+i, em, address {font-style:normal}
+label, button {cursor:pointer}
+caption, legend, .blind {width:0; height:0; margin:0; padding:0; text-indent:-9999em; overflow:hidden; /*visibility:hidden;*/ font-size:0;}/* 2021-12-10 웹접근성 JSY : 수정 */
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {display:block}
+input, textarea, select {-webkit-appearance:none; margin:0; padding:0; -webkit-border-radius:0; border-radius:0; font-family: -apple-system, BlinkMacSystemFont, 'NotoSansR', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; outline-style:none; border:none;}
+button {overflow:visible; border:none; background:transparent none; box-shadow:none; cursor:pointer;}
+option {color:#333333;}
+textarea {-webkit-box-sizing:border-box; box-sizing:border-box; padding:20px 12px; width:100%; border:1px solid #e5e5e5; font-size:16px;}
+/* button {overflow:visible; margin:0; padding:0; border:none; background:none; font-size:0; font-family: -apple-system, BlinkMacSystemFont, 'NotoSansR', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; cursor:pointer;} */
+button::-moz-focus-inner {border:0; padding:0;}
+.ellipsis {display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis}
+a {color:#000; text-decoration:none; word-wrap:break-word; word-break:keep-all;}
+a:link, a:visited, a:hover, a:active {text-decoration:none;}
+em, strong {font-style:normal;}

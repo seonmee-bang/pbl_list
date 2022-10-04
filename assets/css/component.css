@@ -1,0 +1,36 @@
+@charset "utf-8";
+.contents {padding:20px;}
+h4 {font-size:18px; color:#000; font-weight: 600; margin:30px 0}
+section {margin-bottom:50px;}
+
+/* radio box */
+/* 유플스타일 */
+.c-inpfield {display: inline-block ; flex:wrap; position:relative; }
+.c-radio { display: inline-block; position: relative; z-index:10px; margin-right: 50px; padding-left: 26px; color: #000; text-align: left; }
+.c-radio.only {display: inline-block; position: relative; z-index:10px; margin-right: 50px; padding-left: 0px !important; color: #000; text-align: left; }
+.c-radio input[type="radio"] {position: absolute;top: 4px;left: 4px;z-index: -1;width: 14px;height: 14px;background: transparent;border: 0;outline: 0;}
+.c-radio .icon { overflow: hidden; position: absolute; left: 0; top: -2px; width: 22px; height: 22px; background: url(../images/sprites-common.svg) -300px -170px no-repeat;}
+.c-radio .text-radio {display: inline-block; vertical-align: baseline;}
+
+.c-radio input[type="radio"]:focus ~ .text-radio .icon {outline: 1px dotted black;}
+/* 이미지,텍스트 포커스 각각표기
+.c-radio input[type="radio"]:focus ~ .text-radio > span {outline: 1px dotted red;} */
+.c-radio input[type="radio"]:checked ~ .text-radio .icon {background-position-y: -200px;}
+.c-radio input[type="radio"] + label {cursor:pointer;}
+/* .c-radio input[type="radio"]:focus ~ label:after {content:''; display:block; position:absolute; left:0px; top:0; width:100%; height:100%; outline: 1px dotted black; box-sizing: border-box;} */
+.c-radio input[type="radio"]:disabled ~ .text-radio { color: red;}
+.c-radio input[type="radio"]:disabled ~ .text-radio .icon {background-position-y: -230px;}
+
+.radio-type1 {display:inline-block; position:relative; margin-right:50px; }
+.radio-type1 input[type="radio"] {position: absolute; z-index:0; left:0; top:0; width:20px; height:20px; background:none; border: 0; outline: 0;}
+.radio-type1 input[type="radio"] + label {display: inline-block; z-index:5; cursor: pointer; padding-left:20px;}
+.radio-type1 input[type="radio"] + label:after {content:''; display: block; }
+.radio-type1 input[type="radio"] + label:before {content:''; display:inline-block; position:absolute; z-index:5; left:0; top:0; width:20px; height:20px; margin-right:10px;
+  background:#fff; border:1px solid green; border-radius: 50%;} 
+.radio-type1 input[type="radio"]:checked + label:before {content:''; display:inline-block; position:absolute; left:0; top:0; width:20px; height:20px; margin-right:10px;
+    border:1px solid green; border-radius: 50%;}
+.radio-type1 input[type="radio"]:checked + label:after {content:''; position:absolute; z-index:10; width:12px; height:12px; top:5px; left:5px; background:green; border-radius: 50%;;} 
+.radio-type1 input[type="radio"]:checked {border:0 none; z-index:0;}
+.radio-type1 input[type="radio"]:focus ~ label{outline: 1px dotted red;}
+/* .radio-type1 input[type="radio"]:focus {outline:none;} */
+
