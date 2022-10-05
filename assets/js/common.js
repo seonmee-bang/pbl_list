@@ -63,28 +63,7 @@ $('input[name=radio6]').click(function(){
   }
 });
 
-//tabs 
-/* function tabs(){
-  var tabsBtn = $('#tabs li');
-  tabsBtn.on('click',function(){
-    $(this).addClass('on');
-  });
-}
-tabs();
- */
-
-
-
-/* var tabsBtn = $('tabs .tab_menu li');
-    tabsBtn.on('click',function(e){
-      e.preventDefault();
-      tabsBtn.removeClass('active');
-      $(this).addClass('active');
-
-   
-
-    });
- */
+// TAB
 var tabsBtn = $('.tab_menu li a'),
     tabPanner = $('.tab_panner li');
 
@@ -95,14 +74,14 @@ var tabsBtn = $('.tab_menu li a'),
 
       tabPanner.hide();
       var $target = $(this).attr('href');
-      $($target).style('display','block')
+      $($target).css('display','block');
 
     });
     
   //  accordion Type1
   function accordion(){
     var accordionBtn = $('.accordion li a'),
-        accordionCont = $('.accordion li div');
+    accordionCont = $(".accordion li div");
         accordionBtn.on('click',function(){
           $(this).next('div').toggle('on');
         });
