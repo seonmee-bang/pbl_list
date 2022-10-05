@@ -86,5 +86,6 @@ var tabsBtn = $('.tab_menu li a'),
         });
   }
   accordion();
-ㄱㄷ
+
+  
   });
