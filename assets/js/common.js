@@ -75,7 +75,6 @@ var tabsBtn = $('.tab_menu li a'),
       tabPanner.hide();
       var $target = $(this).attr('href');
       $($target).css('display','block');
-
     });
     
   //  accordion Type1
