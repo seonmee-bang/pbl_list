@@ -36,10 +36,6 @@ $(function(){
   // 팝업열기
 var $btnOpen = $('#btnOpen'),
     modalWrap = $('.modal_wrapper');
-
-    $btnOpen.on('click',function(){
-      modalWrap.css('display','flex');
-    });
 /////
 function btnOpen(){
   var popBtn = $('#btnOpen'),
@@ -52,6 +48,15 @@ function btnOpen(){
       btnClose.on('click',function(){
         modal.hide();
       });
+      
+      modal.on('click',function(){
+        if ($('.modal_wrapper').is($('.modal_wrapper'))){
+          
+          $('.modal_wrapper').hide();
+        }
+      });
+      console.log(e.target)
+     
 }
 btnOpen();
 //라디오 체크 별 show, hide
@@ -87,5 +92,23 @@ var tabsBtn = $('.tab_menu li a'),
   }
   accordion();
 
-  
+
+
+  //test
+$(function(){
+  $('#btn1').on('click',function(){
+    $('#test1').attr('href',function(i, origValue){
+      return origValue + '/jquery';
+    });
+    return
   });
+});
+  
+
+
+
+
+
+  });
+
+

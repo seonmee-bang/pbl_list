@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <style>
+      * {list-style: none;}
+      body {width:100%; height:100%; padding:0; margin:0;}
+      .tabMemu {display: flex; padding:0; margin:0}
+      .tabMemu li {flex:1; height:30px; border:1px solid black; text-align: center;}
+      .tabMemu li.on {background:green; }
+      .tabContents li {display: none;}
+      .tabContents li.on {display: block;}
+
+    </style>
+</head>
+<body>
+  <ul class="tabMemu">
+    <li>123</li>
+    <li>123</li>
+    <li class="on">123</li>
+    <li>123</li>
+    <li>123</li>
+  </ul>
+  <ul class="tabContents">
+    <li>111</li>
+    <li>222</li>
+    <li class="on">333</li>
+    <li>444</li>
+    <li>555</li>
+  </ul>
+<script>
+  var tabMenu = $('.tabMemu li'),
+      tabContents = $('.tabContents li');
+
+  for (let i=0; i < $('.tabMemu li').length; i++){
+    tabMenu.eq(i).on('click',function(){
+      tabMenu.eq(i).siblings().removeClass('on');
+      tabMenu.eq(i).addClass('on');
+      tabContents.eq(i).siblings().removeClass('on');
+      tabContents.eq(i).addClass('on');
+      
+    
+  });
+  }
+ /*  $('li').eq(0).on('click',function(){
+    $(this).siblings().removeClass('on');
+    $(this).addClass('on');
+  }); */
+</script>   
+</body>
+</html>
